@@ -67,7 +67,7 @@ export default function TodoForm({ todo, onSubmit, disabled, cursor }) {
 				)}
 				{errors.model && errors.model.type === "maxLength" && (
 					<span className="text-red-600">
-						Max length exceeded (10 characters)
+						Max length exceeded (15 characters)
 					</span>
 				)}
 			</label>
@@ -84,6 +84,7 @@ export default function TodoForm({ todo, onSubmit, disabled, cursor }) {
 					<option value="PGA">PGA</option>
 					<option value="ZIF">ZIF</option>
 					<option value="BGA">BGA</option>
+					<option value="AMD">AMD</option>
 				</select>
 				{errors.socket && errors.socket.type === "required" && (
 					<span className="text-red-600">This is required!</span>
