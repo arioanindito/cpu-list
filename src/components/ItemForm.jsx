@@ -59,7 +59,7 @@ export default function TodoForm({ todo, onSubmit, disabled, cursor }) {
 					id="model"
 					type="text"
 					className={styleInput}
-					{...register("model", { required: true, maxLength: 10 })}
+					{...register("model", { required: true, maxLength: 15 })}
 					placeholder="Model"
 				/>
 				{errors.model && errors.model.type === "required" && (
